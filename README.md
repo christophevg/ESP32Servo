@@ -18,7 +18,7 @@ This library is configured with defaults that match a Tower Pro MG996R servo. Th
 
 ## API
 
-The API mimiks the standard Arduino Servo API, and adds a few utility methods. Currently available extended functionality:
+The API mimiks the standard [Arduino Servo API](https://www.arduino.cc/en/Reference/Servo), and adds a few utility methods. Currently available extended functionality:
 
 * properties `min` and `max` to change the pulse boundaries
 * `void write(int angle, int delay)` : performs steps of 1 degree with a delay (ms) in between steps
