@@ -1,0 +1,6 @@
+ESP32Servo	KEYWORD1
+attach	KEYWORD2
+write	KEYWORD2
+writeMicroseconds	KEYWORD2
+read	KEYWORD2
+detach	KEYWORD2
