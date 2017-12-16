@@ -15,6 +15,8 @@ class ESP32Servo {
     bool attached();
     void detach();
     // a few extensions:
+		// - provide pin at construction, implies attaching the pin
+		ESP32Servo(int pin);
     // - allow for changing the min/max settings
     // these defaults are determined manually for a Tower Pro MG 996R
     int min                 = 2500;

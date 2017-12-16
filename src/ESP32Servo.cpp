@@ -57,3 +57,7 @@ void ESP32Servo::write(int angle, int interval) {
 int ESP32Servo::readMicroseconds() {
   return map(this->angle, 0, 180, this->min, this->max);
 }
+
+ESP32Servo::ESP32Servo(int pin) : ESP32Servo() {
+	this->attach(pin);
+}

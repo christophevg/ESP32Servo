@@ -20,6 +20,7 @@ This library is configured with defaults that match a Tower Pro MG996R servo. Th
 
 The API mimiks the standard [Arduino Servo API](https://www.arduino.cc/en/Reference/Servo), and adds a few utility methods. Currently available extended functionality:
 
+* `ESP32Servo(int pin)`: alternative constructor, allowing to provide pin at construction time, implies attaching it
 * properties `min` and `max` to change the pulse boundaries
 * `void write(int angle, int delay)` : performs steps of 1 degree with a delay (ms) in between steps
 * `int readMicroseconds()` : returns the current angle in microseconds

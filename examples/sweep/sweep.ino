@@ -6,12 +6,14 @@
 
 #define SERVO_PIN 5
 
-ESP32Servo servo;
+// using alternative constructor here, passing the pin
+ESP32Servo servo(SERVO_PIN);
 
 void setup() {
   Serial.begin(115200);
 
-  servo.attach(SERVO_PIN);
+	// this is not needed due to the use of the alternative constructor above
+  // servo.attach(SERVO_PIN);
 
   servo.write(0);
   delay(3000);
