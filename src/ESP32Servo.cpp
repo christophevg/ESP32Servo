@@ -61,3 +61,19 @@ int ESP32Servo::readMicroseconds() {
 ESP32Servo::ESP32Servo(int pin) : ESP32Servo() {
 	this->attach(pin);
 }
+
+void ESP32Servo::turn(int angle) {
+	this->write(this->read() + angle);
+}
+
+void ESP32Servo::turn(int angle, int delay) {
+	this->write(this->read() + angle, delay);	
+}
+
+void ESP32Servo::turn_to(int angle) {
+	this->write(angle);	
+}
+
+void ESP32Servo::turn_to(int angle, int delay) {
+	this->write(angle, delay);
+}

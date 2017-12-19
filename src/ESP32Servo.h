@@ -25,6 +25,12 @@ class ESP32Servo {
     void write(int angle, int delay);
     // - read the current angle in microseconds
     int readMicroseconds();
+		// - turn a given agle starting from the current position, opt. with delay
+		void turn(int angle);
+		void turn(int angle, int delay);
+		// - alternative name for write method, opt. with delay
+		void turn_to(int angle);
+		void turn_to(int angle, int delay);
   protected:
     int resolution          =   16;
     int frequency           =   50;

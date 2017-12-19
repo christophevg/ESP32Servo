@@ -24,6 +24,10 @@ The API mimiks the standard [Arduino Servo API](https://www.arduino.cc/en/Refere
 * properties `min` and `max` to change the pulse boundaries
 * `void write(int angle, int delay)` : performs steps of 1 degree with a delay (ms) in between steps
 * `int readMicroseconds()` : returns the current angle in microseconds
+* `void turn(int angle)`: turns the given angle starting from the current angle
+* `void turn(int angle, int delay)`: turns the given angle starting from the current angle with a given delay
+* `void turn_to(int angle)`: alternative method name for `write`
+* `void turn(int angle, int delay)`: alternative method name for `write` with delay
 
 ## More to come
 
