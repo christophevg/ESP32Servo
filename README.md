@@ -2,6 +2,9 @@
 
 An Arduino library to control a servo using the ESP32
 
+> [!IMPORTANT]  
+> This repo has been [archived](https://docs.github.com/en/repositories/archiving-a-github-repository/archiving-repositories#)
+
 ## Installation
 
 This folder should go in your Sketchbook/libraries folder. You can do this
